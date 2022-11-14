@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Link</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 600px;
+            width:100%;
+            margin: 5em auto;
+            padding: 2em;
+        }
+        p { 
+            font-size: 1.1rem;
+        }
+        a {
+            color: black;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        .fancy-link{
+            background-image: linear-gradient(90deg, red, blue);
+            background-size: 0% 0px;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            transition: background-size ease 300ms;
+        }
+
+        .fancy-link:hover{
+            background-size: 100% 3px;
+        }
+        .fancy-link2{
+            background-image: linear-gradient(45deg, purple, gold);
+            background-size: 0% 0px;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            transition: background-size ease 300ms;
+        }
+
+        .fancy-link2:hover{
+            background-size: 100% 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum, dolor sit amet adipisicing elit. Aliquam ratione placeat <a class="fancy-link" href="#">molestiae obcaecati temporibus quae delectus quidem ex cupiditate?</a> Error quis exercitationem fugiat assumenda rerum, sed pariatur eos temporibus ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a class="fancy-link2" href="#">Enim, explicabo, id amet tempora nihil iste quae, ipsam magni aliquam veniam ex temporibus voluptate minima deleniti.</a> Tenetur assumenda nostrum beatae rem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto nulla incidunt voluptatibus quisquam animi aliquam debitis officiis et natus suscipit praesentium dolor obcaecati, eveniet corrupti, delectus eligendi, vero corporis!</p>
+        </main>
+    </div>
+
+</body>
+</html>
